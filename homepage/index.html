@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cassette</title>
+    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/w95.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/w95.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link type="text/css" rel="stylesheet" href="css/laout.css">
+    <script src="./js/howler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT6H3TB1MF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PT6H3TB1MF');
+    </script>
+
+    <script>
+        $(function () {
+
+            var listen = new Howl({
+                src: ['https://www.chosic.com/wp-content/uploads/2021/07/purrple-cat-wild-strawberry.mp3'],
+                volume: 0.5
+            });
+
+            $("#howler-play").on("click", function () {
+                listen.play();
+            });
+
+            $("#howler-pause").on("click", function () {
+                listen.pause();
+            });
+
+            $("#howler-stop").on("click", function () {
+                listen.stop();
+            });
+
+            $("#howler-volup").on("click", function () {
+                var vol = listen.volume();
+                vol += 0.1;
+                if (vol > 1) {
+                    vol = 1;
+                }
+                listen.volume(vol);
+            });
+
+            $("#howler-voldown").on("click", function () {
+                var vol = listen.volume();
+                vol -= 0.1;
+                if (vol < 0) {
+                    vol = 0;
+                }
+                listen.volume(vol);
+            });
+
+        });
+
+
+
+
+
+    </script>
+
+</head>
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-3">
+        <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+            <li class="nav-item">
+                <a href="https://discord.gg/vqgna9ReJq" class="nav-link " role="button">
+                    <span class="nav-link-inner-text">Discord</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://twitter.com/xOcassette/" class="nav-link" role="button">
+                    <span class="nav-link-inner-text">Twitter</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://listeningparty.club" class="nav-link " role="button">
+                    <span class="nav-link-inner-text">Listening Party</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <span class="time ">4:20 PM</span>
+    </nav>
+</header>
+
+<body class="bg-secondary">
+    <div class="col-sm-auto pl-150 pb-250 pr-350">
+        <div class="card card-tertiary">
+            <div class="card-header">Mp3
+            </div>
+            <div class="card-body">
+
+
+                <center>
+                    <button id='howler-play' class="btn btn-lg mr btn-primary border-dark" type="button">
+                        <div class="btn-icon"><img src="img/play-24.png"><img>
+                            <br></span>
+                    </button>
+                    <button id="howler-pause" class="btn btn-lg mr  btn-primary border-dark" type="button">
+                        <div class="btn-icon"><img src="img/pause-24.png"><img>
+                            <br></span>
+                    </button>
+
+                </center>
+
+            </div>
+        </div><br>
+        <row>
+            <container>
+                <div class="row">
+                    <div class="col-md-8 pl-150">
+                        <div class="card card-tertiary">
+                            <div class="card-header">Mission</div>
+                            <div class="card-body">
+                                <center>
+                                    <h1>Cassette.one</h1>
+                                </center>
+                                <br><br>
+                                <center>
+                                    <p>A pass to a community that regularly hosts live streams on our private platform
+                                        (Listening Party) where you can
+                                        communicate with fellow members via text/voice/video while enjoying live
+                                        rendering visualizations from an artist's live
+                                        stream. Your Cassette also gets you access to all live events (USA) before the
+                                        public does. Suggest and pick artists for
+                                        upcoming events via Livestream, VR/AR & IRL. Each event will have a collectible
+                                        POAP and badge that you will be able to
+                                        view on your event history profile. The community will begin organizing and
+                                        hosting events in Q3 2023. Your membership
+                                        gives entry to events, and access to mixes before the public has a chance to
+                                        hear them and talks with innovators in
+                                        music/tech. The profits from the first round of cassettes will go directly into
+                                        a public fund for development and
+                                        acquiring artists for events. <br><br>Since 1999 was the year of Napster's
+                                        founding,
+                                        will be doing an <b>
+                                            initial mint of 1999
+                                            Cassettes designed by our community members and artists.
+                                        </b>
+                                    </p>
+
+
+
+
+                                    </small>
+                                    <br><br>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-tertiary">
+                            <div class="card-header">info</div>
+                            <div class="card-body">
+                                <p><small>
+
+                                        <center>
+                                            This project is a mixture of web 3.0 decentralization, Blockchain/Token
+                                            technology & WebRTC with traditional Web 2.0
+                                            elements. More info if you're ready to go down this rabbit hole with us,
+                                            follow our Twitter and hit the bell for
+                                            notifications to be able to catch the Open Registration.
+
+                                        </center>
+                                    </small>
+
+
+                                </p>
+                                <center>
+                                    <a href="https://twitter.com/xOcassette/"
+                                        class="btn btn-primary border-dark">@x0cassette</a>
+
+                                </center>
+
+                            </div>
+
+
+                        </div>
+
+                        <br>
+
+                    </div>
+
+                </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    </row>
+
+
+
+
+
+    </div>
+    </div>
+
+    </container>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
